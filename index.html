@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Hanjala's Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .name {
+      font-size: 30px;
+      font-family: 'Courier New', Courier, monospace;
+      margin-left: 20px;
+    }
+    
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 10px;
+      font-weight: bold;
+    }
+    
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 1000px;
+      font-size: 28px;
+      background-image: url('images/hero.jpg');
+      background-position: center;
+      background-size: cover;
+      border-bottom: 10px solid red;
+    }
+
+    .hero span {
+      color: rgb(214, 6, 6);
+      font-size: 43px !important;
+      text-transform: uppercase;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+    }
+
+    .hero .content {
+      text-align: center;
+      margin-top: -300px;
+    }
+
+    .about {
+      padding: 50px 0px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .about .picture {
+      width: 150px;
+      height: 150px;
+    }
+
+    .about .picture img {
+      border-radius: 50%;
+    }
+
+    .about .aboutInfo {
+      width: 450px;
+      font-size: 19px;
+      border: 3px solid rgb(175, 0, 67);
+      padding: 40px 200px;
+    }
+
+    .about .aboutInfo h3 {
+      background-color: rgb(115, 13, 199);
+      padding: 0px 10px;
+      color: white;
+    }
+
+    .hr {
+      background-color: black;
+      width: 2px;
+      height: 240px;
+    }
+
+    .project {
+      padding: 20px 0px;
+      padding-bottom: 80px;
+    }
+
+    .project .row {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
+    }
+
+    .project .row .card {
+      border-radius: 6px;
+    }
+
+    .project .row .card img {
+      width: 350px;
+      height: auto;
+    }
+
+    .project .row .card .link {
+      background-color: red;
+      padding: 6px;
+    }
+
+    .project .row .card .link:hover {
+      background-color: green;
+    }
+
+    .contact-form {
+      background-color: rgb(119, 0, 255);
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 30px;
+      color: white;
+    }
+
+
+    .contact-form .form label {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .contact-form input , textarea {
+      width: 400px;
+      height: 45px;
+      border-radius: 6px;
+      border: none;
+    }
+
+    .contact-form .form button {
+      background-color: rgb(255, 0, 0);
+      color: white;
+      padding: 14px 25px;
+      font-size: 17px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+    }
+
+    .contact-form .form button:hover {
+      background-color: green;
+      cursor: pointer;
+    }
+
+    .contact-form .image img {
+      border-radius: 10px;
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: rgb(0, 0, 0);
+      color: white;
+    }
+
+    footer .icons a img{
+      width: 30px;
+      height: auto;
+      padding: 0 2px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="name">
+      HANJALA
+    </div>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Projects</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="content">
+      <p>Hi, I am <span>Hanjala Shihab</span><br>
+
+      Exploring life's wonders through codes and design. <br>
+       Programmer  | Designer</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="picture">
+      <img src="images/picture.jpg" alt="Profile picture" width="100%"  height="100%" >
+    </div>
+
+    <div class="hr"></div>
+
+    <div class="aboutInfo">
+      <h3>About Me</h3>
+      Hey there, I am Shihab.Born and raised in Cumilla,Bangladesh.
+      I have a great desire to travel the whole world and for that Nadir on the go is my inspiration.
+    </div>
+  </section>
+
+  <section class="project">
+    <h1 style="text-align: center; margin-bottom: 50px; font-size: 30px; background-color: rgb(0, 186, 199); padding: 2px; color: white;">Projects</h1>
+
+    <div class="row">
+      <div class="card">
+        <h4 style="text-align: center; background-color: white;">Project 1</h4>
+          <img src="images/1.png" alt="Project 1">
+        <div class="link">
+          <a href="https://hanjalashihab.github.io/Hotel-Unwind" target="_blank" style="text-decoration: none;color: white; font-size: 19px;">Click to see</a>
+        </div>
+      </div>
+      <div class="card">
+        <h4 style="text-align: center; background-color: white;">Project 2</h4>
+          <img src="images/2.png" alt="Project 2">
+        <div class="link">
+          <a href="https://hanjalashihab.github.io/Nature-Portfolio/" target="_blank" style="text-decoration: none;color: white; font-size: 19px;">Click to see</a>
+        </div>
+      </div>
+      <div class="card">
+        <h4 style="text-align: center; background-color: white;">Project 3</h4>
+          <img src="images/3.png" alt="Project 3">
+        <div class="link">
+          <a href="https://hanjalashihab.github.io/Website-for-Band/" target="_blank" style="text-decoration: none;color: white; font-size: 19px;">Click to see</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 100px;">
+      <div class="card">
+        <h4 style="text-align: center; background-color: white;">Project 4</h4>
+          <img src="images/4.png" alt="Project 4">
+        <div class="link">
+          <a href="https://hanjalashihab.github.io/Ogani/" target="_blank" style="text-decoration: none;color: white; font-size: 19px;">Click to see</a>
+        </div>
+      </div>
+      <div class="card">
+        <h4 style="text-align: center; background-color: white;">Project 5</h4>
+          <img src="images/5.png" alt="Project 5">
+        <div class="link">
+          <a href="https://hanjalashihab.github.io/portfolio" target="_blank" style="text-decoration: none;color: white; font-size: 19px;">Click to see</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact-form">
+    <div class="form">
+      <form action="" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name">
+        <br><br>
+        <label for="Email">Email:</label><br>
+        <input type="email" id="email" name="email">
+        <br><br>
+        <label for="Message">Message</label><br>
+        <textarea name="Message" id="Message" placeholder="Write your message...">
+        </textarea>
+        <br>
+        <button>Submit</button>
+      </form>
+    </div>
+    <div class="image">
+      <img src="images/profilee.jpg" alt="profile" width="300px" height="auto">
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="icons">
+      <a href="https://www.facebook.com/HanjalaShihab/" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/018/910/719/large_2x/facebook-logo-facebook-icon-free-free-vector.jpg" alt="facebook"></a>
+      <a href="https://www.instagram.com/_hanjala___/" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/018/910/697/large_2x/instagram-mobile-app-logo-instagram-app-icon-ig-app-free-free-vector.jpg" alt="insta"></a>
+      <a href="https://github.com/HanjalaShihab" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/016/833/872/large_2x/github-logo-git-hub-icon-on-white-background-free-vector.jpg" alt="github"></a>
+    </div> &nbsp;&nbsp;&nbsp;
+    <div>Copyright &copy; by Hanjala Shihab</div>
+  </footer>
+</body>
+</html>
