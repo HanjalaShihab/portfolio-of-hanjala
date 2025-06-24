@@ -22,9 +22,10 @@
     }
     
     .name {
-      font-size: 30px;
+      font-size:35px;
       font-family: 'Courier New', Courier, monospace;
       margin-left: 20px;
+      font-weight: bold;
     }
     
     nav ul li {
@@ -33,7 +34,21 @@
       padding: 10px;
       font-weight: bold;
     }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+    }
     
+    nav ul li a:hover {
+      color: red;
+    }
+
+    .active {
+      font-size: 20px;
+      color: green;
+    }
+
     .hero {
       display: flex;
       justify-content: center;
@@ -64,7 +79,7 @@
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      height: 500px;
+      height: 400px;
     }
 
     .about .picture {
@@ -96,6 +111,8 @@
     .project {
       padding: 20px 0px;
       padding-bottom: 80px;
+      background-color: rgb(83, 128, 124);
+      border-bottom: 10px solid rgb(93, 16, 194);
     }
 
     .project .row {
@@ -124,12 +141,10 @@
     }
 
     .contact-form {
-      background-color: rgb(119, 0, 255);
       display: flex;
       justify-content: space-evenly;
       align-items: center;
       padding: 30px;
-      color: white;
     }
 
 
@@ -142,7 +157,6 @@
       width: 400px;
       height: 45px;
       border-radius: 6px;
-      border: none;
     }
 
     .contact-form .form button {
@@ -187,10 +201,10 @@
     </div>
     <nav>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li><a href="#Home" class="active">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -204,7 +218,7 @@
     </div>
   </section>
 
-  <section class="about">
+  <section class="about" id="About">
     <div class="picture">
       <img src="images/picture.jpg" alt="Profile picture" width="100%"  height="100%" >
     </div>
@@ -218,8 +232,8 @@
     </div>
   </section>
 
-  <section class="project">
-    <h1 style="text-align: center; margin-bottom: 50px; font-size: 30px; background-color: rgb(0, 186, 199); padding: 2px; color: white;">Projects</h1>
+  <section class="project" id="Projects">
+    <h1 style="text-align: center; margin-bottom: 50px; font-size: 30px; background-color: rgb(255, 255, 255); padding: 2px; color: rgb(0, 0, 0);">Projects</h1>
 
     <div class="row">
       <div class="card">
@@ -264,8 +278,8 @@
   </section>
 
 
-  <section class="contact-form">
-    <div class="form">
+  <section class="contact-form" id="Contact">
+      <div class="form">
       <form action="" method="post">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name">
@@ -280,6 +294,7 @@
         <button>Submit</button>
       </form>
     </div>
+    
     <div class="image">
       <img src="images/profilee.jpg" alt="profile" width="300px" height="auto">
     </div>
