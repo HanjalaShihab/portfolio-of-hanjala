@@ -92,8 +92,9 @@
     }
 
     .about .aboutInfo {
-      width: 450px;
+      max-width: 450px;
       font-size: 19px;
+      padding: 10px;
     }
 
     .about .aboutInfo h3 {
@@ -122,6 +123,13 @@
       text-align: center;
     }
 
+    @media (max-width: 1052px) {
+      .project .row {
+        flex-direction: column;
+        gap: 20px;
+      }      
+    }
+
     .project .row .card {
       border-radius: 6px;
     }
@@ -147,6 +155,27 @@
       padding: 30px;
     }
 
+    @media (max-width: 770px) {
+      .contact-form {
+        flex-direction: column;
+        gap: 50px
+      }
+
+      .about {
+        flex-direction: column;
+        gap: 30px;
+        height: 600px;
+      }
+
+      .hr {
+        display: none;
+      }
+
+      .contact-form input , textarea {
+        width: 200px !important;
+      }
+    }
+
 
     .contact-form .form label {
       font-weight: bold;
@@ -154,7 +183,7 @@
     }
 
     .contact-form input , textarea {
-      width: 400px;
+      width: 380px;
       border-radius: 6px;
       border: 1px solid rgb(182, 182, 182);
       padding: 18px;
