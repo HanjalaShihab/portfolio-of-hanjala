@@ -6,6 +6,224 @@
   <link rel="shortcut icon" href="images/S.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css" />
   <title>Hanjala's Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .name {
+      font-size:35px;
+      font-family: 'Courier New', Courier, monospace;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+    }
+    
+    nav ul li a:hover {
+      color: red;
+    }
+
+    .active {
+      font-size: 20px;
+      color: green;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 1000px;
+      font-size: 28px;
+      background-image: url('images/hero.jpg');
+      background-position: center;
+      background-size: cover;
+      border-bottom: 10px solid red;
+    }
+
+    .hero span {
+      color: rgb(214, 6, 6);
+      font-size: 43px !important;
+      text-transform: uppercase;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+    }
+
+    .hero .content {
+      text-align: center;
+      margin-top: -300px;
+    }
+
+    .about {
+      padding: 50px 0px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 400px;
+    }
+
+    .about .picture {
+      width: 200px;
+      height: 200px;
+    }
+
+    .about .picture img {
+      border-radius: 50%;
+    }
+
+    .about .aboutInfo {
+      max-width: 450px;
+      font-size: 19px;
+      padding: 10px;
+    }
+
+    .about .aboutInfo h3 {
+      background-color: rgb(115, 13, 199);
+      padding: 0px 10px;
+      color: white;
+    }
+
+    .hr {
+      background-color: black;
+      width: 2px;
+      height: 240px;
+    }
+
+    .project {
+      padding: 20px 0px;
+      padding-bottom: 80px;
+      background-color: rgb(51, 95, 91);
+      border-bottom: 10px solid rgb(47, 0, 255);
+    }
+
+    .project .row {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
+    }
+
+    @media (max-width: 1052px) {
+      .project .row {
+        flex-direction: column;
+        gap: 20px;
+      }      
+    }
+
+    .project .row .card {
+      border-radius: 6px;
+    }
+
+    .project .row .card img {
+      width: 350px;
+      height: auto;
+    }
+
+    .project .row .card .link {
+      background-color: red;
+      padding: 6px;
+    }
+
+    .project .row .card .link:hover {
+      background-color: green;
+    }
+
+    .contact-form {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 30px;
+    }
+
+    @media (max-width: 770px) {
+      .contact-form {
+        flex-direction: column;
+        gap: 50px
+      }
+
+      .about {
+        flex-direction: column;
+        gap: 30px;
+        height: 600px;
+      }
+
+      .hr {
+        display: none;
+      }
+
+      .contact-form input , textarea {
+        width: 200px !important;
+      }
+    }
+
+
+    .contact-form .form label {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .contact-form input , textarea {
+      width: 380px;
+      border-radius: 6px;
+      border: 1px solid rgb(182, 182, 182);
+      padding: 18px;
+    }
+
+    .contact-form .form button {
+      background-color: rgb(255, 0, 0);
+      color: white;
+      padding: 14px 25px;
+      font-size: 17px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+    }
+
+    .contact-form .form button:hover {
+      background-color: green;
+      cursor: pointer;
+    }
+
+    .contact-form .image img {
+      border-radius: 10px;
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: rgb(0, 0, 0);
+      color: white;
+    }
+
+    footer .icons a img {
+      width: 30px;
+      height: auto;
+      padding: 0 2px;
+      border-radius: 50%;
+    }
+  </style>
 </head>
 <body>
   <header>
